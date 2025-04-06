@@ -6,7 +6,7 @@
 
 ## Beeline - CLI for AlgoHive puzzles files management
 
-Beeline is a command line interface for managing AlgoHive puzzles files. It allows you to create, test and manage puzzles files (`.algohive`) for the Algohive platform.
+Beeline is a command line interface for managing AlgoHive puzzles files. It allows you to create, test and manage puzzles files (`.alghive`) for the Algohive platform.
 
 > Beeline is the quickest and more direct way to create puzzles for AlgoHive.
 
@@ -21,8 +21,6 @@ Beeline runs on Python 3.6 and above. It does not require any external dependenc
 ## Usage
 
 To create a new puzzle, run the following command:
-
-> TODO: To be implemented, right now the CLI only supports testing and compiling puzzles with `python3 --test folder/`
 
 ```bash
 python3 beeline.py new <puzzle-name>
@@ -42,3 +40,7 @@ To compile a puzzle, run the following command:
 python3 beeline.py compile [--test] [--test-count] <puzzle-file>
 # Compiles the puzzle file
 ```
+
+## Future updates
+
+- Make the CLI able to work on closed projecf (.algohive files) or open project (folder)
