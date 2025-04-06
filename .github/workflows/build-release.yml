@@ -25,11 +25,11 @@ jobs:
 
       - name: Build executable (Windows)
         if: runner.os == 'Windows'
-        run: pyinstaller --onefile --name hivecraft.exe beeline.py
+        run: pyinstaller --onefile --name beeline.exe beeline.py
 
       - name: Build executable (Linux)
         if: runner.os == 'Linux'
-        run: pyinstaller --onefile --name hivecraft beeline.py
+        run: pyinstaller --onefile --name beeline beeline.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
